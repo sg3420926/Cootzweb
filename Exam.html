@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="mystyle3.css">
+    <script src="https://kit.fontawesome.com/19daf2ef6d.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>
+        Cootz
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="myModal" class="modal">
+            <div class="modal-content" onmouseover="popup()" onmouseleave="popdown()">
+                <h3>Exams</h3>
+                <div><img src="./images/UPSC.png" /><span>UPSC</span></div>
+                <div><img src="./images/SSC.png" /><span>SSC</span></div>
+                <div><img src="./images/UGC NET.png" /><span>UGC NET</span></div>
+                <div><img src="./images/RRB.png" /><span>RRB</span></div>
+                <a href="Exam.html"><div><img src="./images/SBI PO.png" /><span>SBI PO</span></div></a>
+                <div><img src="./images/UPSC.png" /><span>CBSE</span></div>
+                <div><img src="./images/UPSC.png" /><span>UPSC</span></div>
+                <div><img src="./images/UGC NET.png" /><span>UGC NET</span></div>
+                <div><a href="Examlist.html" class="view">View More</a></div>
+            </div>
+        </div>
+        <div id="myModal2" class="modal">
+            <div class="modal-content2" onmouseover="popup2()" onmouseleave="popdown2()">
+                <h3>Contests</h3>
+                <div>Trending</div>
+                <div>Upcoming</div> 
+                <div>Past Contests</div>
+            </div>
+        </div>
+        <div class="nav">
+            <img src="./images/logo.png" />
+            <span class='s5'>COOTZ</span>
+            <a href="Register.html" class="s6"> Sign Up</a>
+            <a href="Blogs.html"><span class="s2">Blogs</span></a>
+            <span class="s3" onmouseover="popup2()" onmouseleave="popdown2()">Contests<i class="fas fa-caret-down"></i></span>
+            <span class="s4" onmouseover="popup()" onmouseleave="popdown()">Exams<i class="fas fa-caret-down"></i></span>
+            <a href="index.html"><span class="s1">Home</span></a>
+        </div>
+        <script>
+            const mod = document.getElementById('myModal');
+            const mod2 = document.getElementById('myModal2')
+            const mod3 = document.getElementById("myModal3")
+            function popup() {
+                mod.style.display = "block"
+                mod2.style.display = "none"
+            }
+            function popup2() {
+                mod.style.display = "none"
+                mod2.style.display = "block"
+            }
+            function popdown2() {
+                mod2.style.display = 'none';
+            }
+            function popdown() {
+                mod.style.display = 'none';
+            }
+        </script>
+        <div class="box1">
+            <div class="box1a">
+                <div class="examN">
+                    <img src="./images/image 8.png" />
+                    <h2>SBI PO</h2>
+                    <div class="as">SBI PO <i class="fas fa-caret-down"></i></div>
+                    <span>*You can change your exam</span>
+                </div>
+            </div>
+
+            <div class="box1b">
+                <div class="nav2"><span class="dt" id="dt2" onclick="details()">Details</span><span class="con" id="con2" onclick="contest()">Contests</span><span class='py'>PYP's</span><span class="Bl">Blog</span></div>
+                <div class="content" id="content2">
+                    <p>SBI PO Prelims and Pre Exam Training Admit Card is out. The SBI recruitment authority had
+                        recently invited
+                        applications for the Probationary Officer posts. A total of 2056 vacancies have been released.
+                        Read this
+                        article till the end to know information about eligibility, vacancy, exam dates and other
+                        details for the SBI
+                        PO Exam 2021-22.
+                    </p>
+                    <p>SBI PO 2021 exam will be conducted by the State Bank of India (SBI) to select eligible candidates
+                        for the post
+                        of Probationary Officers (PO) in different branches of the State Bank of India. SBI PO is one of
+                        the most
+                        coveted jobs in the Banking industry and a dream job for millions of aspirants across India
+                    </p> 
+                    <div class="noti"><span class="sa">SBI PO Notification 2021</span><span class="sb">04th October 2021</span></div>
+                    <div class="result"><span class="sc">Declaration of Final Result</span><span class="sd">04th October 2021</span></div>
+                    <p>The State Bank of India will be soon releasing the SBI PO 2021 Prelims Result & Score Card for exam held 
+                        on 20th, 21st & 27th November 2021. All candidates who appeared for the SBI PO 2021 prelims exam, can 
+                        click on the link given below to know more about SBI PO Prelims Result & Score Card</p>
+                    <h3 class="read">Read More &nbsp; &nbsp;<i class="fas fa-caret-down" ></i></h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+         function details(){
+            document.getElementById("content2").innerHTML=' <p>SBI PO Prelims and Pre Exam Training Admit Card is out. The SBI recruitment authority had'+
+                        'recently invited'+
+                        'applications for the Probationary Officer posts. A total of 2056 vacancies have been released.'+
+                        'Read this'+
+                        'article till the end to know information about eligibility, vacancy, exam dates and other'+
+                        'details for the SBI'+
+                        'PO Exam 2021-22.'+
+                    '</p>'+
+                    '<p>SBI PO 2021 exam will be conducted by the State Bank of India (SBI) to select eligible candidates'+
+                        'for the post'+
+                        'of Probationary Officers (PO) in different branches of the State Bank of India. SBI PO is one of'+
+                        'the most'+
+                        'coveted jobs in the Banking industry and a dream job for millions of aspirants across India'+
+                    '</p>'+ 
+                    '<div class="noti"><span class="sa">SBI PO Notification 2021</span><span class="sb">04th October 2021</span></div>'+
+                    '<div class="result"><span class="sc">Declaration of Final Result</span><span class="sd">04th October 2021</span></div>'+
+                    '<p>The State Bank of India will be soon releasing the SBI PO 2021 Prelims Result & Score Card for exam held'+ 
+                        'on 20th, 21st & 27th November 2021. All candidates who appeared for the SBI PO 2021 prelims exam, can'+ 
+                        'click on the link given below to know more about SBI PO Prelims Result & Score Card</p>'+
+                    '<h3 class="read">Read More &nbsp; &nbsp;<i class="fas fa-caret-down" ></i></h3>'
+            var st2={
+                "font-weight": "bold",
+                 "color":"#156DD1",
+               "border-bottom":".3vw solid #156DD1",
+               "padding":".5vw"
+            }
+            var cond=document.getElementById("con2");
+           var deta=document.getElementById("dt2")
+           var st={
+                "font-weight": "unset",
+                 "color":"unset",
+               "border-bottom":"unset",
+               "padding":"unset"
+            }
+            Object.assign(cond.style,st)
+            
+            Object.assign(deta.style,st2)
+         }
+        function contest(){
+            document.getElementById("content2").innerHTML="<h2>demo data</h2>"
+            var st={
+                "font-weight": "bold",
+                 "color":"#156DD1",
+               "border-bottom":".3vw solid #156DD1",
+               "padding":".5vw"
+            }
+            var cond=document.getElementById("con2");
+           var deta=document.getElementById("dt2")
+            Object.assign(cond.style,st)
+            var st2={
+                "font-weight": "unset",
+                 "color":"unset",
+               "border-bottom":"unset",
+               "padding":"unset"
+            }
+            Object.assign(deta.style,st2)
+        }
+    </script>
+</body>
+
+</html>

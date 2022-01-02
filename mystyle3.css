@@ -1,0 +1,335 @@
+/*exam.html ki style*/
+@font-face {
+    font-family: bal;
+    src: url(Baloo-Regular.ttf);
+}
+@font-face {
+    font-family: pop;
+    src: url(Poppins-Medium.ttf);
+}
+.container{
+        margin:auto;
+        width:98%;
+        height:100%;
+    }
+.nav{
+    background-color: black;
+    padding:0vw 2vw 0vw 2vw;
+}
+.nav img{
+    width:4vw;
+    margin-top:1.5vw;
+}
+.nav .s5{
+    font-family: pop;
+    font-size:2vw;
+    color:#2DBBE0;
+    font-weight:bold;
+    position: relative;
+    bottom:.8vw;
+    margin-top:1vw;
+}
+.s1,.s2,.s3,.s4,.s6{
+    color:white;
+    float:right;
+    margin:1vw;
+    font-size:1.3vw;
+    font-family: pop;
+    padding:1vw;
+    cursor:pointer;
+}
+.s6{
+    text-decoration: none;
+    background-color:#4CD4CA;
+    border-radius: 1vw;
+    margin-top:1.5vw;
+    padding: .5vw 1vw ;
+}
+.box1{
+    width:100%;
+    height:50vw;
+    box-shadow:0 0 1vw rgb(73, 72, 72);
+}
+.box1a{
+    float:left;
+    display: inline-block;
+    width:22vw;
+    height:100%;
+    margin:1vw;
+    margin-top:2vw;
+    padding:1vw;
+   
+}
+.box1b{
+    display: inline-block;
+    width:62vw;
+    border:.3vw solid rgb(88, 85, 85);
+    height:90%;
+    float:right;
+    margin:3vw;
+    margin-top:2vw;
+    position:relative;
+    right:1vw;
+    border-radius:1vw;
+    background: #F9F9F9;
+}
+.nav2{
+    background-color: white;
+    text-align:center;
+    padding:1vw;
+    box-shadow:0 2vw 3vw rgb(153, 151, 151);
+}
+.nav2 span{
+    cursor:pointer;
+    margin:3vw;
+    font-size: 1.2vw;
+    font-family: pop;
+}
+.examN{
+    text-align:center;
+    display:inline-block;
+    width:20vw;
+    height:20vw;
+    box-shadow: 0 0 1vw rgb(102, 100, 100);
+    border-radius:1vw;
+}
+.examN img{
+    width:6vw;
+    margin-top: 2.5vw;
+}
+.as{
+    border:.2vw solid #55ACEE;
+    text-align:unset;
+    color: #156DD1;
+    font-weight:bold;
+    border-radius: 1.5vw;
+    padding: 1vw;
+    font-family:pop;
+    width:15vw;
+    margin:auto;
+    font-size: 1.2vw;
+}
+
+.examN h2{
+    font-size:2vw;
+    font-weight:bold;
+    font-family:pop;
+    padding: 0;
+    margin:0;
+}
+.as .fas{
+    float:right;
+}
+.examN span{
+    font-size:.8vw;
+    font-weight:bold;
+    font-family:pop;
+
+}
+.content {
+    padding: 1vw;
+}
+.content p{
+    font-size:1.2vw;
+    font-family:pop;
+    font-weight:bold;
+    color:rgba(56, 55, 55, 0.89);
+}
+.noti ,.result{
+    margin:.5vw;
+    display:block;
+    background-color:#6ADBD3;
+    border-radius: .5vw;
+    padding:.8vw;
+    width:30vw;
+}
+.result{
+    background-color:#55ACEE;
+}
+.sa{
+    font-family: pop;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color:white;
+}
+.sb{
+    font-family: pop;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color:black;
+    float: right;
+}
+.sc{
+    font-family: pop;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color:white;
+}
+.sd{
+    font-family: pop;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color:black;
+    float: right;
+}
+.read{
+    font-size:1.2vw;
+    color: #0084E8;
+    font-family: pop;
+    cursor: pointer;
+    display:inline-block;
+}
+.read:hover{
+    text-shadow:1px 1px 2px  black;
+}
+.dt{
+    font-weight: bold;
+    color:#156DD1;
+    border-bottom:.3vw solid #156DD1;
+    padding:.5vw;
+}
+@media only screen and (max-width:600px){
+    .s1,.s2,.s3,.s4,.s6{
+        font-size: 10px;
+    }
+    .nav{
+        padding:1vw;
+    }
+    .box1a{
+        display:block;
+        width:100%;
+        float: unset;
+        height: auto;
+    }
+    .box1{
+       padding:1vw;
+        height: auto;
+    }
+    .box1b{
+        display:block;
+        margin: auto;
+        float: unset;
+        width:95%;
+    }
+    .nav2 span{
+        font-size: 2.2vw;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .sa,.sb,.sc,.sd{
+        font-size:10px;
+    }
+    .noti,.result{
+        width:95%;
+    }
+    .read{
+        font-size: 10px;
+    }
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+     /* Location of the box */
+    left: 0;
+    top: 4vw;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color:white;
+    position: relative;
+    width: 34vw;
+    padding: 10px;
+    border: 1px solid #888;
+    float: right;
+    right:20vw;
+    border-radius: 1vw;
+    font-family: pop;
+    font-size:1.2vw;
+    font-weight: bold;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-content img{
+      width:1.3vw;
+      padding:1vw;
+      background-color: #cfcdcd;
+      border-radius: .3vw;
+  }
+  .modal-content span{
+      position: relative;
+      bottom: 1.6vw;
+      font-size:1.2vw;
+      font-weight: bold;
+      font-family: bal;
+      margin-left: .3vw;
+  }
+  .modal-content div{
+      width:10vw;
+      margin:.5vw;
+      display: inline-block;
+  }
+   .view{
+       text-decoration: none;
+       font-size: 1vw;
+       padding: .8vw 1.5vw;
+       background-color:#e2dddd ;
+       display: inline;
+       color: black;
+       font-family:pop;
+       font-weight: bold;
+   }
+   .modal-content2{
+    background-color:white;
+    position: relative;
+    width: 12vw;
+    padding: 10px;
+    border: 1px solid #888;
+    float: right;
+    right:17vw;
+    border-radius: 1vw;
+    font-family: pop;
+    font-size:1.2vw;
+    font-weight: bold;
+   }
+   .modal-content2 div {
+       width:10vw;
+       font-family: bal;
+       font-size:1.3vw;
+       margin:1vw;
+       color: rgb(48, 46, 46);
+   }
+   .view:hover{
+       background-color:#129FF7;
+       
+   }
+   .modal-content a{
+    color:black;
+}
+@media only screen and (max-width:700px){
+    .modal{
+        position:fixed;
+        top:8vw;
+        left:0;
+    }
+   }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="mystyle4.css">
+    <script src="https://kit.fontawesome.com/19daf2ef6d.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>
+        Cootz-Exams
+    </title>
+</head>
+<body>
+    <div class="container">
+        <div id="myModal" class="modal">
+            <div class="modal-content" onmouseover="popup()" onmouseleave="popdown()">
+                <h3>Exams</h3>
+                <div><img src="./images/UPSC.png" /><span>UPSC</span></div>
+                <div><img src="./images/SSC.png" /><span>SSC</span></div>
+                <div><img src="./images/UGC NET.png" /><span>UGC NET</span></div>
+                <div><img src="./images/RRB.png" /><span>RRB</span></div>
+                <a href="Exam.html"><div><img src="./images/SBI PO.png" /><span>SBI PO</span></div></a>
+                <div><img src="./images/UPSC.png" /><span>CBSE</span></div>
+                <div><img src="./images/UPSC.png" /><span>UPSC</span></div>
+                <div><img src="./images/UGC NET.png" /><span>UGC NET</span></div>
+                <div><a href="./images/Examlist.html" class="view">View More</a></div>
+            </div>
+        </div>
+        <div id="myModal2" class="modal">
+            <div class="modal-content2" onmouseover="popup2()" onmouseleave="popdown2()">
+                <h3>Contests</h3>
+                <div>Trending</div>
+                <div>Upcoming</div>
+                <div>Past Contests</div>
+            </div>
+        </div>
+        <div class="nav">
+            <img src="./images/logo.png" />
+            <span class='s5'>COOTZ</span>
+            <a href="Register.html" class="s6"> Sign Up</a>
+            <a href="Blogs.html"><span class="s2">Blogs</span></a>
+            <span class="s3"  onmouseover="popup2()" onmouseleave="popdown2()">Contests<i class="fas fa-caret-down"></i></span>
+            <span class="s4" onmouseover="popup()" onmouseleave="popdown()">Exams<i class="fas fa-caret-down"></i></span>
+            <a href="index.html"><span class="s1">Home</span></a>
+        </div>
+        <script>
+            const mod = document.getElementById('myModal');
+            const mod2 = document.getElementById('myModal2')
+            const mod3 = document.getElementById("myModal3")
+            function popup() {
+                mod.style.display = "block"
+                mod2.style.display = "none"
+            }
+            function popup2() {
+                mod.style.display = "none"
+                mod2.style.display = "block"
+            }
+            function popdown2() {
+                mod2.style.display = 'none';
+            }
+            function popdown() {
+                mod.style.display = 'none';
+            }
+        </script>
+        <div class="box1">
+            <h2>All Exams</h2>
+            <div class="ex">
+                
+                <a href="Exam.html"><div class="p1">
+                    <img src="./images/SBI PO.png" />
+                    <h4>SBI-PO</h4>
+                </div></a>
+                <div class="p1"><img src="./images/SSC.png" />
+                    <h4>SSC</h4>
+                </div>
+                <div class="p1"><img src="./images/UGC NET.png" />
+                    <h4>UGC-NET</h4>
+                </div>
+                <div class="p1"><img src="./images/UPSC.png" />
+                    <h4>UPSC</h4>
+                </div>
+                <div class="p1"><img src="./images/RRB.png" />
+                    <h4>RRB</h4>
+                </div>
+                <div class="p1">
+                    <img src="./images/SBI PO.png" />
+                    <h4>SBI-PO</h4>
+                </div>
+                <div class="p1"><img src="./images/SSC.png" />
+                    <h4>SSC</h4>
+                </div>
+                <div class="p1"><img src="./images/UGC NET.png" />
+                    <h4>UGC-NET</h4>
+                </div>
+                <div class="p1"><img src="./images/UPSC.png" />
+                    <h4>UPSC</h4>
+                </div>
+                <div class="p1"><img src="./images/RRB.png" />
+                    <h4>RRB</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

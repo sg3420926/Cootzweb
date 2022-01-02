@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://kit.fontawesome.com/19daf2ef6d.js" crossorigin="anonymous"></script>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<title>
+    Cootz-Register
+</title>
+    <link rel="stylesheet" href="./mackbook2.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <br>
+        <br>
+        <br>
+
+        <div class="inner_container">
+            <div class="inner_left">
+                <div class="circle"></div>
+                <div class="content">
+                    <div class="top">
+                        <div class="top_left">
+                            <div><img src="./images/Group 13 1.png" alt=""></div>
+                            <div><span>COOTZ</span></div>
+                        </div>
+                        <div class="top_right">
+                            <div class="text">Available Soon</div>
+                            <div class="image">
+                                <img src="./images/app-store-png-logo-33123 1.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttom_image">
+                        <div class="first_image"><img src="./images/prize 1.png" alt=""></div>
+                        <div class="second_image"><img src="./images/second.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner_right">
+
+                <div class="d1">
+                    <div class="d1_l">
+                        <div class="text_1">Welcome,<br>Register yourself with us for</div>
+                        <div class="text_2">FREE tickets</div>
+                    </div>
+
+                </div>
+                <div class="d2">
+                    <input type="text" class="input" id="name" name="name" placeholder="Full Name">
+                    <input type="email" class="input" id="email" name="email" placeholder="Email ID">
+                    <input type="text" class="input" id="number" name="number" placeholder="Phone Number">
+                </div>
+                <div class="d3">Already a member ? <span> LOG IN</span></div>
+                <div class="d4"><button class="google_btn">
+                        <img src="./images/google.png" alt="google">
+                        <p>Register Using Google</p>
+
+                    </button></div>
+                <div class="d5">
+                <div class="get_otp" onclick="sendotp()">
+                        <p>Get OTP</p>
+                    </div>
+
+
+                </div>
+                <div class="curve" style="top:-21%;height: 14vw;"></div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="./script/OTP.js"></script>
+    <style>
+        .inner_right {
+            height: 39vw;
+        }
+
+        .d5 {
+            top: 1%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .inner_right {
+                height: 70vw;
+            }
+
+            .d5 {
+                top: -18%;
+            }
+        }
+    </style>
+</body>
+
+</html>
