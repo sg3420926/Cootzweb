@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/mystyle6.css">
+    <title>
+        Cootz-Exam-Panel
+    </title>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"><h1>Exams</h1><img src="./images/logo.png"/><h1>Panel</h1></div>
+        <div class="box2">
+            <h2>Exams We Have</h2>
+            <div class="box2a">
+
+            </div>
+        </div>
+        <div class="box3">
+            <h2>Add exam</h2>
+        
+                <label for="examnam">Exam Name</label>
+                <input type="text" name="ExamName" id="examnam">
+                <label for="examdet">Detail</label>
+                <textarea  id="examdet" name="Detail"></textarea>
+                <lable for="examcod">Exam code</lable>
+                <input type="text" name="Code" id="examcod"/>
+                <button class="btn" onclick="send()">Submit</button>
+            
+        </div>
+    </div>
+    <script>
+    const  send= async()=>{
+        var ExamName=document.getElementById("examnam").value;
+        var Code= document.getElementById("examcod").value;
+        var Detail=document.getElementById("examdet").value;
+        const data={ExamName:ExamName,Detail:Detail,Code:Code}
+        const res=await fetch("http://localhost:8000/examdata",{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body: JSON.stringify(data)
+        })
+        const d=await res.json()
+        if(d===true){
+            alert('Exam added')
+        }
+       
+       
+    }
+    </script>
+</body>
+</html>

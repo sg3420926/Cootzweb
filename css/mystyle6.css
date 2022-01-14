@@ -1,0 +1,90 @@
+@font-face {
+	font-family: bal;
+	src: url(Baloo-Regular.ttf);
+}
+@font-face {
+	font-family: pop;
+	src: url(Poppins-Medium.ttf);
+}
+.container {
+	margin: auto;
+	width: 98%;
+	height: 100%;
+	box-shadow: 0 0 0.5vw rgb(151, 151, 151);
+}
+.box1 {
+	text-align: center;
+	margin: auto;
+	width: auto;
+	background: linear-gradient(90.27deg, #41cad3 5.21%, #129ff7 87.97%);
+}
+.box1 h1 {
+	display: inline;
+	font-size: 5vw;
+	font-family: bal;
+	color: white;
+}
+@keyframes anime {
+	0% {
+		background-color: black;
+		left: 0px;
+	}
+	25% {
+		background-color: yellow;
+		left: 200px;
+	}
+	75% {
+		background-color: rgb(0, 255, 115);
+		left: -200px;
+	}
+	100% {
+		background-color: black;
+		left: 0px;
+	}
+}
+.box1 img {
+	width: 7vw;
+	padding: 1.5vw;
+	border: 2px solid white;
+	margin: 0.5vw;
+	border-radius: 50%;
+	background-color: black;
+	position: relative;
+	top: 1.5vw;
+	animation-name: anime;
+	animation-duration: 4s;
+}
+.box2 h2 {
+	font-family: bal;
+	text-align: center;
+}
+.box3 {
+	padding: 3vw;
+	font-family: pop;
+}
+.box3 input {
+	outline: none;
+	margin: 1vw;
+}
+input[type='text'],
+select,
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+.btn {
+	font-family: Pop;
+	outline: none;
+	border: 2px solid #129ff7;
+	background: linear-gradient(
+		135.62deg,
+		#129ff7 -4.42%,
+		rgba(0, 129, 209, 0.31) 100.86%
+	);
+    cursor: pointer;
+}

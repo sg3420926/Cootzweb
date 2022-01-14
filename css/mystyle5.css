@@ -1,0 +1,99 @@
+/*for admin pannel*/
+@font-face {
+    font-family: bal;
+    src: url(Baloo-Regular.ttf);
+}
+@font-face {
+    font-family: pop;
+    src: url(Poppins-Medium.ttf);
+}
+.container{
+    width:98%;
+    height:auto;
+    box-shadow: 0 0 5px rgb(156, 155, 155);
+    margin:auto;
+}
+.box1{
+    text-align:center;
+    margin: auto;
+    width: auto;
+    background: linear-gradient(90.27deg, #41CAD3 5.21%, #129FF7 87.97%)
+}
+.box1 h1{
+    display:inline;
+    font-size:5vw;
+    font-family: bal;
+    color: white;
+}
+@keyframes anime{
+    0%   {background-color:black; left:0px;}
+    25%  {background-color:yellow; left:200px}
+    75%  {background-color:rgb(255, 0, 221); left:-200px;}
+    100% {background-color:black; left:0px;}
+}
+.box1 img{
+    width:7vw;
+    padding: 1.5vw;
+    border: 2px solid white;
+    margin:.5vw;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    top: 1.5vw;
+    animation-name: anime;
+    animation-duration: 4s;
+}
+.box2{
+    text-align: center;
+    padding: 2vw;
+    height:auto;
+}
+.corner1,.corner2,.corner3,.corner4,.corner5{
+    width:23vw;
+    height:18vw;
+    display:inline-block;
+    margin: 2vw;
+
+}
+.box2 img{
+    width:12vw;
+    height:12vw;
+    border-radius: 50%;
+}
+.box2 h2{
+    font-size:2.5vw;
+    font-family: bal;
+    color: black;
+}
+
+.corner1:hover,.corner2:hover,.corner3:hover,.corner4:hover,.corner5:hover{
+    box-shadow: 0 0 .5vw rgb(151, 151, 151);
+    cursor: pointer;
+}
+@media only screen and (max-width:600px) {
+    .corner1,.corner2,.corner3,.corner4,.corner5{
+        display: block;
+        text-align: center;
+        width:100%;
+        height:25vw;
+    }
+    .box2 img{
+        width:15vw;
+        height:15vw;
+        border-radius: 50%;
+    }
+    .box2 h2{
+        font-size:4vw;
+        font-family: bal;
+        color: black;
+    }
+    .box1 h1{
+        font-size: 30px;
+    }
+    @keyframes anime{
+        0%   {background-color:black; left:0px;}
+        25%  {background-color:yellow; left:100px}
+        75%  {background-color:rgb(255, 0, 221); left:-100px;}
+        100% {background-color:black; left:0px;}
+    }
+}
